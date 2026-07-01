@@ -104,6 +104,11 @@ body {
 .wrapper>* {
   min-width: 0
 }
+[class*=__container] {
+  padding-left: .9375rem;
+  padding-right: .9375rem;
+  margin: 0 auto
+}
 [class*="--gc"] {
   display: grid;
   min-width: 0;
@@ -271,6 +276,12 @@ a.link::before {
     font-size: 1.625rem
   }
 }
+@media (max-width:25em) {
+  .footer__container {
+    flex-direction: column;
+    gap: .625rem
+  }
+}
 @media (max-width:20em) {
   [class*=__container] {
     padding-left: .9375rem
@@ -290,10 +301,6 @@ a.link::before {
     -webkit-column-gap: 1.875rem;
     -moz-column-gap: 1.875rem;
     column-gap: 1.875rem
-  }
-  .footer__container {
-    flex-direction: column;
-    gap: .625rem
   }
   .hero__container {
     align-items: start
