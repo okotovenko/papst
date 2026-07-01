@@ -267,9 +267,6 @@ a.link::before {
   .block .content {
     gap: 1.25rem
   }
-  .block .content>div>*:not(:last-child) {
-    margin-bottom: .3125rem
-  }
   .block {
     gap: 2.5rem
   }
