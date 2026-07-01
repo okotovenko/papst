@@ -195,9 +195,6 @@ body {
   grid-template-rows: 1fr;
   align-items: center
 }
-.hero__logo {
-  grid-column-start: 2
-}
 a.link {
   position: relative;
   display: inline-block;
@@ -303,10 +300,8 @@ a.link::before {
     column-gap: 1.875rem
   }
   .hero__container {
-    align-items: start
-  }
-  .hero {
-    padding-top: 2.5rem
+    align-items: center;
+    grid-template-columns: 1fr
   }
   .block .content {
     gap: 1.25rem
