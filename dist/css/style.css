@@ -160,6 +160,16 @@ body {
   padding-top: .625rem;
   padding-bottom: .625rem
 }
+.footer__container>a>img,
+.footer__container>a>picture {
+  width: 1.875rem;
+  height: 1.875rem
+}
+.footer__container>a picture img,
+.footer__container>a picture source {
+  width: 1.875rem;
+  height: 1.875rem
+}
 .footer__right {
   display: flex;
   align-items: center
@@ -276,12 +286,6 @@ a.link::before {
     font-size: 1.625rem
   }
 }
-@media (max-width:25em) {
-  .footer__container {
-    flex-direction: column;
-    gap: .625rem
-  }
-}
 @media (max-width:20em) {
   [class*=__container] {
     padding-left: .9375rem
@@ -316,8 +320,19 @@ a.link::before {
     gap: 2.5rem
   }
 }
-@media (max-width:31.25em) {
+@media (max-width:37.5em) {
+  .footer__container {
+    flex-direction: column;
+    gap: .625rem
+  }
+  .footer__container>a {
+    order: 2
+  }
+  .footer__left {
+    order: 3
+  }
   .footer__right {
+    order: 1;
     flex-wrap: wrap;
     justify-content: center
   }
